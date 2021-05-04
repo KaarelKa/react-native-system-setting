@@ -257,7 +257,7 @@ export default class SystemSetting {
     }
 
     static removeListener(listener) {
-        listener && listener.remove()
+        listener && listener.remove && listener.remove()
     }
 
     static listenEvent(complete) {
